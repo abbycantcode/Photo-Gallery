@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Screenshot Gallery</title>
+</head>
+<body>
+    <div id="sort">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+            <option value="default">Default</option>
+            <option value="size">Size</option>
+        </select>
+    </div>
+    <h1>Photo Gallery</h1>
+    <div id="gallery">
+    </div>
+    <div id="pagination">
+        <button id="firstPage">First</button>
+        <button id="prevPage">Previous</button>
+        <span id="pageCounter">Page 1 of 1</span>
+        <button id="nextPage">Next</button>
+        <button id="lastPage">Last</button>
+    </div>
+    <div id="pageNavigation"></div>
+    <div id="overlay" class="overlay">
+        <img src="" alt="Full-size Image">
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
